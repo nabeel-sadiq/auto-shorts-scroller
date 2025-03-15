@@ -1,19 +1,23 @@
 {
   "manifest_version": 2,
-  "name": "Borderify",
-  "version": "1.0",
-  "description": "Adds a red border to all webpages matching mozilla.org.",
+  "name": "YT Shorts Auto Scroll",
+  "version": "0.0.1",
+  "description": "Scrolls youtube shorts automatically.",
   "permissions": [
     "activeTab",
     "scripting"
   ],
+  "icons": {
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
   "content_scripts": [
     {
       "matches": [
         "https://www.youtube.com/shorts/*"
       ],
       "js": [
-        "main.js"
+        "src/main.js"
       ]
     }
   ],
